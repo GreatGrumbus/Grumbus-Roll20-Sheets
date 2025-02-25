@@ -1,0 +1,71 @@
+<div class="sheetmagic" style="width: 1000px; height: 1497px; background-image: url(&quot;https://i.ibb.co/Kj99Xjwc/57.jpg&quot;);">
+<input name="attr_character_name" data-sm-id="1" type="text" class="sm-prop sm-slt" placeholder="Enter Name" style="left: 525px; top: 92px; width: 395px; height: 39px; font-size: 23px;">
+<input name="attr_trait1" data-sm-id="2" type="text" class="sm-prop sm-slt" placeholder="Enter Trait" style="left: 528px; top: 185px; width: 397px; height: 43px; font-size: 26px;">
+<input name="attr_trait2" data-sm-id="3" type="text" class="sm-prop sm-slt" placeholder="Enter Trait" style="left: 526px; top: 242px; width: 400px; height: 42px; font-size: 25px;">
+<textarea name="attr_chardetails" data-sm-id="4" class="sm-prop sm-mlt" placeholder="Enter Text" style="left: 72px; top: 343px; width: 820px; height: 198px; font-size: 30px; line-height: 1;">
+</textarea>
+<select id="PHYSdie" name="attr_PHYSdie" data-sm-id="7" class="sm-prop sm-mlt" style="left: 80px; top: 665px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="SOLdie" name="attr_SOLdie" data-sm-id="8" class="sm-prop sm-mlt" style="left: 145px; top: 625px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="MNDdie" name="attr_MNDdie" data-sm-id="9" class="sm-prop sm-mlt" style="left: 205px; top: 665px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="CMPLXdie" name="attr_CMPLXdie" data-sm-id="9" class="sm-prop sm-mlt" style="left: 731px; top: 665px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="DSRdie" name="attr_DSRdie"data-sm-id="9" class="sm-prop sm-mlt" style="left: 795px; top: 625px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="EMOdie" name="attr_EMOdie"  data-sm-id="9" class="sm-prop sm-mlt" style="left: 865px; top: 665px; width: 58px; height: 58px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="4">d4</option>
+	<option value="6">d6</option>
+	<option value="8">d8</option>
+</select>
+<select id="rolldieA" name="attr_rolldieA" data-sm-id="9" class="sm-prop sm-mlt" style="left: 366px; top: 673px; width: 96px; height: 54px; font-size: 22px;">
+	<option disabled selected>--</option>
+	<option value="@{attr_PHYSdie}">PHYS</option>
+	<option value="@{attr_MNDdie}">MND</option>
+</select>
+<select id="rolldieB" name="attr_rolldieB" data-sm-id="9" class="sm-prop sm-mlt" style="left: 537px; top: 673px; width: 96px; height: 54px; font-size: 22px;">
+	<option disabled selected>--</option>
+	<option value="@{attr_CMPLXdie}">CMPLX</option>
+	<option value="@{attr_EMOdie}">EMO</option>
+	<option value="@{attr_DSRdie}">DSR</option>
+</select>
+<button name="roll_physroll" value="/r 1d@{PHYSdie}" data-sm-id="11" type="roll" class="sm-prop sm-roll" style="left: 72px; top: 739px; width: 92px; height: 31px;">PHYS</button>
+<button name="roll_mndroll" value="/r 1d@{MNDdie}" data-sm-id="12" type="roll" class="sm-prop sm-roll" style="left: 184px; top: 739px; width: 92px; height: 31px;"><MND/button>
+<button name="roll_solroll" value="/r @{SOLdie}" data-sm-id="13" type="roll" class="sm-prop sm-roll" style="left: 128px; top: 783px; width: 92px; height: 31px;"></button>
+<button name="roll_cmplxroll" value="/r 1d@{CMPLXdie}" data-sm-id="15" type="roll" class="sm-prop sm-roll" style="left: 725px; top: 741px; width: 91px; height: 28px;">CMPLX</button>
+<button name="roll_emoroll" value="/r 1d@{EMOdie}" data-sm-id="16" type="roll" class="sm-prop sm-roll" style="left: 834px; top: 740px; width: 94px; height: 29px;">EMO</button>
+<button name="roll_dsrroll" value="/r 1d@{DSRdie}" data-sm-id="17" type="roll" class="sm-prop sm-roll" style="left: 779px; top: 784px; width: 93px; height: 29px;">DSR</button>
+<input name="attr_paraname" data-sm-id="5" type="text" class="sm-prop sm-slt"  placeholder="Enter Name" style="left: 82px; top: 869px; width: 404px; height: 41px; font-size: 25px;">
+<select id="PARAtype" data-sm-id="10" class="sm-prop sm-slt" style="left: 82px; top: 999px; width: 404px; height: 41px; font-size: 25px;">
+	<option disabled selected>--</option>
+	<option value="PARApsi">Psi</option>
+	<option value="PARAzeta">Zeta</option>
+	<option value="PARAupsilon">Upsilon</option>
+	<option value="PARAdelta">Delta</option>
+</select>
+<textarea name="attr_paradetails" data-sm-id="6" class="sm-prop sm-mlt" placeholder="Enter Text" style="left: 83px; top: 1135px; width: 822px; height: 202px; font-size: 30px; line-height: 1;">
+</textarea>
+<button name="roll_query" value="/roll 1d@{attr_rolldieA}+1d@{rolldieB} &{template:default} {{name=Test Attack}} {{attack=[[1d20]]}} {{damage=[[2d6]]}}" data-sm-id="14" type="roll" class="sm-prop sm-roll" style="left: 417px; top: 768px; width: 169px; height: 54px;"></button>
+</div>
